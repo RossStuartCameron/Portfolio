@@ -29,7 +29,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-link {
-  font-size: 1.2rem;
+  font-size: 2rem;
   font-family: "Ubuntu-Light";
 }
 .profile-txt{
@@ -40,14 +40,6 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
 }
 
-.center {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #fff;
-}
-
 /*----------------------- Profile Section -----------------------*/
 .profile-img {
   width: 30%;
@@ -56,42 +48,46 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 20px;
 }
 
-/* Mobile Phone Handling */
-@media (max-width: 360px)
+/*------------------------- Mobile Media ------------------------*/
+@media (max-width: 750px)
 {
   /* Nav Bar */
   .navbar-brand {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     font-weight: bold;
   }
+
   /*----------------------- Title Section -----------------------*/
-  /* Title Image */
   .title-image {
-    width: 360px;
+    width: 750px;
     height: auto;
   }
-  /* New Title Image Styling */
+  .center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 2rem;
+  }
   .container {
     margin-left: 0;
     margin-right: 0;
     padding-left: 0;
     padding-right: 0
   }
-  .center {
-    font-size: 1rem;
-  }
-  /* Profile */
+
+  /*----------------------- Profile Section -----------------------*/
   .profile-txt{
-    font-size: 1rem;
+    font-size: 2rem;
     text-align: center;
     margin-left: 2%;
     margin-right: 2%;
   }
 }
 
-/* Non Mobile */
-
-@media (min-width: 360px)
+/*----------------------- Non Mobile Media-----------------------*/
+@media (min-width: 750px)
 {
   .navbar-brand {
     font-size: 2rem;
@@ -112,10 +108,16 @@ h1, h2, h3, h4, h5, h6 {
     height: auto;
     margin-bottom: 2%;
   }
+  /*----------------------- Profile Section -----------------------*/
+  .profile-txt{
+    font-size: 2rem;
+    text-align: center;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
 }
 
 /*----------------------- Carousel Section -----------------------*/
-
 .portfolio-image {
   width: 70%;
   border-radius: 10%;
@@ -123,13 +125,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 .image-desc {
   font-weight: lighter;
-  font-size: .75rem;
-}
-/*----------------------- Footer Section -----------------------*/
-.footer-txt{
-  font-size: .75rem;
+  font-size: 1.5rem;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
+/*----------------------- Footer Section -----------------------*/
 .btn {
   margin-top: 10px;
   margin-bottom: 10px;
@@ -141,4 +142,8 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1rem;
   padding: 10px 10px 10px 10px;
   text-decoration: none;
+}
+
+.footer-txt{
+  font-size: 1.5rem;
 }
