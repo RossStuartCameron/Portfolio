@@ -8,7 +8,14 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Ubuntu-Bold";
 }
 
-/* Sections Colours */
+hr {
+  border: dotted #8c9398 6px;
+  border-bottom: none;
+  width: 10%;
+  margin: 50px auto;
+}
+
+/*------------------------- Section Styles -------------------------*/
 .colored-section {
   background-color: #425a6f;
   color: #fff;
@@ -18,7 +25,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*----------------------- Navigation Section -----------------------*/
-
 .navbar {
   padding: 0 0 1.5rem;
 }
@@ -28,112 +34,65 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0 18px;
 }
 
+.navbar-brand {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
 .nav-link {
   font-size: 2rem;
   font-family: "Ubuntu-Light";
 }
-.profile-txt{
-  font-weight: lighter;
+
+/*---------------------- Title Image Section ----------------------*/
+.row {
+  align-content: center;
+}
+/* Used to centre element */
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 2rem;
 }
 
 .container {
   position: relative;
 }
 
+.title-image {
+  width: inherit;
+  height: auto;
+}
+
 /*----------------------- Profile Section -----------------------*/
 .profile-img {
   width: 30%;
-  border-radius: 80%;
-  margin-top: 30px;
-  margin-bottom: 20px;
+  border-radius: 15%;
 }
-
-/*------------------------- Mobile Media ------------------------*/
-@media (max-width: 750px)
-{
-  /* Nav Bar */
-  .navbar-brand {
-    font-size: 2.5rem;
-    font-weight: bold;
-  }
-
-  /*----------------------- Title Section -----------------------*/
-  .title-image {
-    width: 750px;
-    height: auto;
-  }
-  .center {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #fff;
-    font-size: 2rem;
-  }
-  .container {
-    margin-left: 0;
-    margin-right: 0;
-    padding-left: 0;
-    padding-right: 0
-  }
-
-  /*----------------------- Profile Section -----------------------*/
-  .profile-txt{
-    font-size: 2rem;
-    text-align: center;
-    margin-left: 2%;
-    margin-right: 2%;
-  }
-}
-
-/*----------------------- Non Mobile Media-----------------------*/
-@media (min-width: 750px)
-{
-  .navbar-brand {
-    font-size: 2rem;
-    font-weight: bold;
-  }
-  .profile-txt {
-      font-size: 1rem;
-      text-align: center;
-      margin-left: 5%;
-      margin-right: 5%;
-  }
-  .center {
-    font-size: 2rem;
-  }
-  /* Title Image */
-  .title-image {
-    width: inherit;
-    height: auto;
-    margin-bottom: 2%;
-  }
-  /*----------------------- Profile Section -----------------------*/
-  .profile-txt{
-    font-size: 2rem;
-    text-align: center;
-    margin-left: 2%;
-    margin-right: 2%;
-  }
+.profile-txt{
+  font-weight: lighter;
+  font-size: 2rem;
+  text-align: center;
+  margin: 25px 2% 0 2%;
 }
 
 /*----------------------- Carousel Section -----------------------*/
 .portfolio-image {
-  width: 70%;
-  border-radius: 10%;
-  margin: 20px;
+  width: 80%;
+  border-radius: 15%;
 }
 .image-desc {
   font-weight: lighter;
   font-size: 1.5rem;
-  margin-left: 10%;
-  margin-right: 10%;
+  margin: 25px 10% 0 10%
 }
 
 /*----------------------- Footer Section -----------------------*/
 .btn {
-  margin-top: 10px;
-  margin-bottom: 10px;
+
+  margin-bottom: 25px;
   background: #ced9e4;
   -webkit-border-radius: 8;
   -moz-border-radius: 8;
@@ -145,5 +104,5 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .footer-txt{
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
